@@ -1,11 +1,11 @@
 {
-  "name": "picture-management",
+  "name": "react-pictures-manager",
   "version": "1.0.0",
-  "homepage": "https://gitlab.com/melkorAMP/picture-managment",
+  "homepage": "https://github.com/exagonsoft/React-Picture-Manager",
   "description": "React Module to List and Upload Pictures",
   "repository": {
      "type": "git",
-     "url":"https://gitlab.com/melkorAMP/picture-managment.git"
+     "url":"https://github.com/exagonsoft/React-Picture-Manager.git"
   },
   "main": "index.js",
   "scripts": {
