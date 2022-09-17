@@ -1,0 +1,100 @@
+.campaign-card-image-container {
+    max-width: 100%;
+    height: 250px;
+    width: auto;
+    border: 1px solid;
+    color: lightgray;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    scroll-behavior: smooth;
+    flex-direction: column;
+  }
+  
+  .campaign-images-btn-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .campaign-images-wrapper {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  
+  .campaign-btn-wrapper {
+    width: 100%;
+    margin-bottom: 5px;
+    height: 15%;
+    display: flow-root;
+  }
+  
+  .campaign-card-image-card {
+    height: 90%;
+    border: 1px solid #337ab7;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    background-color: #08090845;
+  }
+  
+  .campaign-card-image {
+    margin: 10px;
+    width: auto;
+    height: 70%;
+    border: none;
+  }
+  
+  .card-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .campaign-card-image-button-del {
+    width: auto;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #d9534f;
+    border: 1px solid #d9534f;
+    color: white;
+  }
+  
+  .campaign-card-image-button-del:hover {
+    background-color: #d3241e;
+    border: 1px solid #d3241e;
+  }
+  
+  .campaign-card-image-button-update {
+    width: auto;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #4fd961;
+    border: 1px solid #4fd961;
+    color: white;
+  }
+  
+  .campaign-card-image-button-update:hover {
+    background-color: #088f25;
+    border: 1px solid #088f25;
+  }
+  
+  .campaign-card-add-images {
+    margin-top: 8px;
+    max-width: 128px;
+    border: 1px solid #337ab7;
+    background-color: #337ab7;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+  }
+  
+  .campaign-card-add-images:hover {
+    border: 1px solid #296293;
+    background-color: #296293;
+  }

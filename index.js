@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import styles from './styles/default.module.css'
 
 const ImageCard = props => {
   const [imageUrl, setImageUrl] = useState('')
@@ -7,12 +8,12 @@ const ImageCard = props => {
   }, [props.src])
   return (
     <>
-      <div id={'Image' + props.index} className="image-item campaign-card-image-card">
-        <img src={imageUrl} alt={'Image' + props.index} className="campaign-card-image" />
-        <div className="card-btn-container">
+      <div id={'Image' + props.index} className={styles.campaign-card-image-card}>
+        <img src={imageUrl} alt={'Image' + props.index} className={styles.campaign-card-image} />
+        <div className={styles.card-btn-container}>
           <button
             type="button"
-            className="campaign-card-image-button-delete"
+            className={styles.campaign-card-image-button-del}
             onClick={() => props.onImageRemove(props.index)}
           >
             Remove
@@ -45,7 +46,7 @@ const ImagesUploader = props => {
       const element = event.target.files[index]
       let image = document.createElement('img')
       image.id = 'image' + index
-      image.className = 'campaign-card-image'
+      image.className = '{styles.campaign-card-image}'
       image.src = URL.createObjectURL(element)
       //imgsContainer.appendChild(image)
       let reader = new FileReader()
@@ -75,14 +76,14 @@ const ImagesUploader = props => {
 
   return (
     <>
-      <div className="campaign-images-btn-wrapper">
-        <div className="campaign-images-wrapper">
+      <div className={styles.campaign-images-btn-wrapper}>
+        <div className={styles.campaign-images-wrapper}>
           {props.imageList.map((image, index) => (
             <ImageCard key={index} src={image.url} index={image.id} onImageRemove={onImageRemove}></ImageCard>
           ))}
         </div>
-        <div className="campaign-btn-wrapper">
-          <button onClick={onImageUpload} className="campaign-card-add-images" type="button">
+        <div className={styles.campaign-btn-wrapper}>
+          <button onClick={onImageUpload} className={styles.campaign-card-add-images} type="button">
             Add Images
           </button>
         </div>
